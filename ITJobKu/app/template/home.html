@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href={{ url_for('static', filename='/css/style.css') }} type="text/css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Open+Sans:wght@500;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ITJobKu</title>
+	<link rel="shortcut icon" href={{ url_for('static', filename='/images/logo-itjobku-1_1-black.png') }}>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+	<div class="bg"></div>
+	<div id="particles-js"></div>
+	<div id="scrollbar-track">
+		<div id="scrollbar-thumb"></div>
+	</div>
+	<div id="navbar"></div>
+	<div class="navbar-container">
+		<div id="navbar-top">
+			<div class="col-3">
+				<img src={{ url_for('static', filename='/images/logo-itjobku-black.png') }}>
+			</div>
+			<div class="col-6">
+				<div class="nav-container">
+					<a>
+						<button id="nav-btn" class="disable">Home</button>
+					</a>
+					<a href="{{ url_for('job') }}">
+						<button id="nav-btn">Job List</button>
+					</a>
+					<a href="{{ url_for('about') }}">
+						<button id="nav-btn">About Us</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-container1">
+		<div class="main-glass">
+			<div class="main-joblist"></div>
+			<div class="main-desc">Temukan rekomendasi pekerjaan IT untuk Anda di sini!</div>
+			<a href="{{ url_for('test') }}">
+				<button class="main-btn">Test Now</button>
+			</a>
+			<a href="#intro">
+				<button class="main-btn">More Info</button>
+			</a>
+		</div>
+	</div>
+  	<div id="intro">
+		<div class="circle" style="clip-path: circle(10% at 25% 35%);"></div>
+		<div class="circle" style="clip-path: circle(18% at 75% 65%);"></div>
+		<div class="circle" style="clip-path: circle(5% at 15% 65%);"></div>
+		<div class="main-container2">
+			<div class="main-glass info-glass">
+				<div class="main-desc info-text">
+					Punya sertifikat?? Pernah ikut workshop??<br>
+					Tapi masih bingung pekerjaan mana yang pas?<br><br>
+				</div>
+				<div class="main-desc info-text" style="color: #564787;">
+					ITJobKu solusinya<br>
+					ITJobKu akan memberikan rekomendasi pekerjaan di bidang IT berdasarkan kompetensi dan pengalaman Anda
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		©2022&emsp;|&emsp;ITJobKu by abc5 (Fibonacci 3)
+	</div>
+	<script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='js/client.js') }} ></script>
+	<script src={{ url_for('static', filename='js/script.js') }} ></script>
+	<script src={{ url_for('static', filename='js/particles.js') }} ></script>
+	<script src={{ url_for('static', filename='js/app.js') }} ></script>
+	<script src={{ url_for('static', filename='js/stats.js') }} ></script>
+</body>
+
+</html>

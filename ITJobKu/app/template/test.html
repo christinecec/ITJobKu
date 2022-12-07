@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href={{ url_for('static', filename='/css/style.css') }} type="text/css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Open+Sans:wght@500;800&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ITJobKu</title>
+		<link rel="shortcut icon" href={{ url_for('static', filename='/images/logo-itjobku-1_1-black.png') }}>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	</head>
+
+<body>
+	<div class="bg"></div>
+	<div id="scrollbar-track">
+		<div id="scrollbar-thumb"></div>
+	</div>
+	<div class="test-container">
+		<a href="{{ url_for('home') }}">
+			<button id="nav-tes-btn" class="quit-test">Quit Test</button>
+		</a>
+		<div class="test-innercontainer">
+			<div class="test-title">
+				Pilih yang paling sesuai dengan diri Anda
+			</div>
+			<div class="test-question-container">
+				<div class="test-question">
+					<form action="/hasil" method="POST">
+						<div class="q">
+							<label for="certificate">Saya memiliki sertifikasi...</label>
+							<select id="certificate" name="certificate">
+								<option value="" selected>Pilih salah satu...</option>
+								<option value="0">App Development</option>
+								<option value="1">Distro Making</option>
+								<option value="2">Shell Programming</option>
+								<option value="3">Hadoop</option>
+								<option value="4">Information Security</option>
+								<option value="5">Shell Programming</option>
+								<option value="6">Python</option>
+								<option value="7">R Programming</option>
+								<option value="8">Machine Learning</option>
+							</select>
+						</div>
+						<div class="q">
+							<label for="workshop">Saya pernah mengikuti workshop...</label>
+							<select id="workshop" name="workshop">
+								<option value="" selected>Pilih salah satu...</option>
+								<option value="0">Cloud Computing</option>
+								<option value="1">Data Science</option>
+								<option value="2">Database Security</option>
+								<option value="3">Game Development</option>
+								<option value="4">Hacking</option>
+								<option value="5">System Designing</option>
+								<option value="6">Testing</option>
+								<option value="7">Web Technologies</option>
+							</select>
+						</div>
+						<div class="q">
+							<label for="memory">Menurut saya, tingkat kemampuan ingatan saya...</label>
+							<select id="memory" name="memory">
+								<option value="" selected>Pilih salah satu...</option>
+								<option value="0">Tinggi</option>
+								<option value="1">Biasa saja</option>
+								<option value="2">Buruk</option>
+							</select>
+						</div>
+						<div class="q">
+							<label for="interested-subject">Saya tertarik pada bidang/subjek...</label>
+							<select id="interested_subject" name="interested_subject">
+								<option value="" selected>Pilih salah satu...</option>
+								<option value="0">Computer Architecture</option>
+								<option value="1">IoT</option>
+								<option value="2">Management</option>
+								<option value="3">Software Engineering</option>
+								<option value="4">Cloud Computing</option>
+								<option value="5">Data Engineering</option>
+								<option value="6">Hacking</option>
+								<option value="7">Networks</option>
+								<option value="8">Parallel Computing</option>
+								<option value="9">Programming</option>
+							</select>
+						</div>
+						<div class="q">
+							<label for="career_area">Saya tertarik untuk berkarir di bidang...</label>
+							<select id="career_area" name="career_area">
+								<option value="" selected>Pilih salah satu...</option>
+								<option value="0">Business Process Analyst</option>
+								<option value="1">Cloud Computing</option>
+								<option value="2">Developer</option>
+								<option value="3">Security</option>
+								<option value="4">System Developer</option>
+								<option value="5">Testing</option>
+							</select>
+						</div>
+						<div class="q">
+							<label for="company">Jenis perusahaan yang ingin saya tempati adalah...</label>
+							<select id="company" name="company">
+								<option value="" selected>Pilih salah satu...</option>
+								<option value="0">BPA</option>
+								<option value="1">Cloud Services</option>
+								<option value="2">Finansial</option>
+								<option value="3">Berbasis produk</option>
+								<option value="4">SAaS Services</option>
+								<option value="5">Sales and Marketing</option>
+								<option value="6"> Berbasis jasa/pelayanan</option>
+								<option value="7">Testing and Maintenance Services</option>
+								<option value="8">Web Services</option>
+								<option value="9">Product Development</option>
+							</select>
+						</div>
+						<div class="q">
+							<label for="work_in_team">Saya pernah bekerja dalam tim.</label>
+							<select id="work_in_team" name="work_in_team">
+								<option value="" selected>Pilih salah satu...</option>
+								<option value="1">Pernah</option>
+								<option value="0">Tidak Pernah</option>
+							</select>
+						</div>
+						<input type="submit" id="prediksi_submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		©2022&emsp;|&emsp;ITJobKu by abc5 (Fibonacci 3)
+	</div>
+	<script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='js/client.js') }} ></script>
+	<script src={{ url_for('static', filename='js/script.js') }} ></script>
+	<script src={{ url_for('static', filename='js/particles.js') }} ></script>
+	<script src={{ url_for('static', filename='js/app.js') }} ></script>
+	<script src={{ url_for('static', filename='js/stats.js') }} ></script>
+</body>
+
+</html>

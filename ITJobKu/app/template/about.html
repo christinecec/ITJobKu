@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href={{ url_for('static', filename='/css/style.css') }} type="text/css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Open+Sans:wght@500;800&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ITJobKu</title>
+		<link rel="shortcut icon" href={{ url_for('static', filename='/images/logo-itjobku-1_1-black.png') }}>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	</head>
+
+<body>
+	<div class="bg"></div>
+	<div id="scrollbar-track">
+		<div id="scrollbar-thumb"></div>
+	</div>
+	<div id="navbar"></div>
+	<div class="navbar-container">
+		<div id="navbar-top">
+			<div class="col-3">
+				<img src={{ url_for('static', filename='/images/logo-itjobku-black.png') }}>
+			</div>
+			<div class="col-6">
+				<div class="nav-container">
+					<a href="{{ url_for('home') }}">
+						<button id="nav-btn">Home</button>
+					</a>
+					<a href="{{ url_for('job') }}">
+						<button id="nav-btn">Job List</button>
+					</a>
+					<a>
+						<button id="nav-btn" class="disable">About Us</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-3">
+				<a href="{{ url_for('test') }}">
+					<button id="nav-tes-btn">Take Test</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="about-container">
+		<div class="about-innercontainer">
+			<div class="info-glass about-glass">
+				<img src={{ url_for('static', filename='/images/logo-itjobku-black.png') }}>
+				<div class="about">
+					ITJobKu adalah sebuah aplikasi yang bertujuan untuk memberikan rekomendasi pekerjaan
+					berdasarkan hasil prediksi yang dibangun berdasarkan model Decision Tree .
+					ITJobKu dibangun oleh Kelompok abc5 dari kelas Fibonacci.
+					Harapannya aplikasi ini dapat membantu siapapun yang ingin memulai kariernya
+					di bidang teknologi berdasarkan potensi dan skillnya.
+				</div>
+			</div>
+			<div class="team-container">
+				<div class="team about-glass">
+					<img src={{ url_for('static', filename='/images/logo-abc5.png') }}>
+					<div>
+						Kami kelompok <b>abc5</b> dari kelas Fibonacci pada program Studi Independen
+						AI Mastery Batch 3. Nama <b>abc5</b> terbentuk karena 
+						berasal dari nama awalan anggota tim dimana urut sesuai abjad, terdapat 
+						a, b, dan c serta 5 berasal dari 5 anggota tim.
+					</div>
+				</div>
+			</div>
+			<div class=team-card-container>
+				<div class="row">
+					<div class="member-card">
+						<div class="square"></div>
+						<div class="card">
+							<div class="profile">
+								<img src={{ url_for('static', filename='/images/ine.webp') }} style="object-position: 0 40%;">
+								<h3>Christine Cecillia Putri</h3>
+								<p>Team Leader & AI Engineer</p>
+								<div class="content">
+									<a href="https://www.instagram.com/ccilliap_/" target="_blank" class="icon">
+										<i class="fa fa-instagram" id="insta"></i>
+									</a>
+									<a href="https://www.linkedin.com/in/christine-cecillia-putri-049a05254/" target="_blank" class="icon">
+										<i class="fa fa-linkedin"></i>
+									</a>
+									<a href="mailto:christinececilliaputri@gmail.com" target="_blank" class="icon">
+										<i class="fa fa-envelope"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="member-card">
+						<div class="square"></div>
+						<div class="card">
+							<div class="profile">
+								<img src={{ url_for('static', filename='/images/calvin.jpeg') }}>
+								<h3>Calvin Ferdinand Daffa</h3>
+								<p>Project Manager & Logo Designer</p>
+								<div class="content">
+									<a href="https://www.instagram.com/e.frezeref/" target="_blank" class="icon">
+										<i class="fa fa-instagram" id="insta"></i>
+									</a>
+									<a href="mailto:calvinferdinand.cf@gmail.com" target="_blank" class="icon">
+										<i class="fa fa-envelope"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="member-card">
+						<div class="square"></div>
+						<div class="card">
+							<div class="profile">
+								<img src={{ url_for('static', filename='/images/farah.jpg') }}>
+								<h3>Anisah Farah Fadhilah</h3>
+								<p>Web Developer</p>
+								<div class="content">
+									<a href="https://www.instagram.com/anisahfrh/" target="_blank" class="icon">
+										<i class="fa fa-instagram" id="insta"></i>
+									</a>
+									<a href="https://www.linkedin.com/in/anisah-farah-fadhilah-3697751b2/" target="_blank" class="icon">
+										<i class="fa fa-linkedin"></i>
+									</a>
+									<a href="mailto:anisahfarah28@gmail.com" target="_blank" class="icon">
+										<i class="fa fa-envelope"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="member-card">
+						<div class="square"></div>
+						<div class="card">
+							<div class="profile">
+								<img src={{ url_for('static', filename='/images/balma.jpg') }} style="object-position: 100% 0;">
+								<h3>Balma Bahira Adzkia</h3>
+								<p>Web Developer</p>
+								<div class="content">
+									<a href="https://www.instagram.com/balmabahiraa/" target="_blank" class="icon">
+										<i class="fa fa-instagram" id="insta"></i>
+									</a>
+									<a href="https://www.linkedin.com/in/balma-bahira-adzkia-b8577a1b8" target="_blank" class="icon">
+										<i class="fa fa-linkedin"></i>
+									</a>
+									<a href="mailto:balmabahira27@gmail.com" target="_blank" class="icon">
+										<i class="fa fa-envelope"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="member-card">
+						<div class="square"></div>
+						<div class="card">
+							<div class="profile">
+								<img src={{ url_for('static', filename='/images/nawa.jpg') }} style="object-position: 0 100%;">
+								<h3>Anis Munawaroh</h3>
+								<p>AI Engineer</p>
+								<div class="content">
+									<a href="https://www.instagram.com/anis_munawaroh_/" target="_blank" class="icon">
+										<i class="fa fa-instagram" id="insta"></i>
+									</a>
+									<a href="https://github.com/anismunawaroh77" target="_blank" class="icon">
+										<i class="fa fa-github"></i>
+									</a>
+									<a href="mailto:anismunawaroh77@gmail.com" target="_blank" class="icon">
+										<i class="fa fa-envelope"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="circle" style="clip-path: circle(4% at 90% 20%);"></div>
+		<div class="circle" style="clip-path: circle(12% at 30% 5%);"></div>
+		<div class="circle" style="clip-path: circle(15% at 60% 35%);"></div>
+		<div class="circle" style="clip-path: circle(7% at 20% 48%);"></div>
+		<div class="circle" style="clip-path: circle(25% at 90% 70%);"></div>
+		<div class="circle" style="clip-path: circle(15% at 30% 85%);"></div>
+	</div>
+	<div class="footer">
+		©2022&emsp;|&emsp;ITJobKu by abc5 (Fibonacci 3)
+	</div>
+	<script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='js/client.js') }} ></script>
+	<script src={{ url_for('static', filename='js/script.js') }} ></script>
+	<script src={{ url_for('static', filename='js/particles.js') }} ></script>
+	<script src={{ url_for('static', filename='js/app.js') }} ></script>
+	<script src={{ url_for('static', filename='js/stats.js') }} ></script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href={{ url_for('static', filename='/css/style.css') }} type="text/css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Open+Sans:wght@500;800&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ITJobKu</title>
+		<link rel="shortcut icon" href={{ url_for('static', filename='/images/logo-itjobku-1_1-black.png') }}>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	</head>
+
+<body>
+	<div class="bg"></div>
+	<div id="scrollbar-track">
+		<div id="scrollbar-thumb"></div>
+	</div>
+	<div id="navbar"></div>
+	<div class="navbar-container">
+		<div id="navbar-top">
+			<div class="col-3">
+				<img src={{ url_for('static', filename='/images/logo-itjobku-black.png') }}>
+			</div>
+			<div class="col-6">
+				<div class="nav-container">
+					<a href="{{ url_for('home') }}">
+						<button id="nav-btn">Home</button>
+					</a>
+					<a>
+						<button id="nav-btn" class="disable">Job List</button>
+					</a>
+					<a href="{{ url_for('about') }}">
+						<button id="nav-btn">About Us</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-3">
+				<a href="{{ url_for('test') }}">
+					<button id="nav-tes-btn">Take Test</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="about-container job-container">
+		<div id="job01" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/net-security-eng.png') }}>
+			<div>
+				<div class="job-title">Network Security Engineer</div>
+				Bertanggung jawab untuk melindungi jaringan internal perusahaan atau kantor. 
+				Bertugas untuk mendeteksi, menyelidiki, dan mencegah gangguan yang mungkin dapat terjadi di sistem. 
+				Seorang network security engineer harus memastikan tidak adanya kebocoran data yang terjadi di jaringan. 
+				<br><br>Tugas-tugas lainnya antara lain:<br>
+				1. Melakukan konfigurasi firewall di seluruh jaringan<br>
+				2. Mendokumentasikan dan menentukan kebijakan keamanan data perusahaan<br>
+				3. Merekomendasikan perubahan atau pembaruan dalam rangka perlindungan keamanan data perusahaan
+			</div>
+		</div>
+		<div id="job02" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/software-eng.png')}}>
+			<div>
+				<div class="job-title">Software Engineer</div>
+				Bertanggung jawab untuk mengembangkan sistem, program, dan perangkat lunak dalam perusahaan. 
+				Software engineer dibutuhkan untuk menganalisis kebutuhan dan desain pengguna, konstruksi, serta uji aplikasi. 
+				Biasanya bekerja sama dengan software developer, programmer, dan spesialis quality control.
+				<br><br>Tugas-tugas SE lainnya antara lain:<br>
+				1. Merancang, membangun, dan mengetes sebuah sistem atau aplikasi<br>
+				2. Mengelola aplikasi atau software secara berkala serta memperbaiki kesalahan yang terjadi<br>
+				3. Merekomendasikan software update untuk aplikasi atau sistem yang sudah ada
+			</div>
+		</div>
+		<div id="job03" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/ux-designer.png')}}>
+			<div>
+				<div class="job-title">UX Designer</div>
+				Bertanggung jawab dalam menentukan apa pengalaman terbaik untuk pengguna dalam menggunakan suatu produk, misal website atau aplikasi. 
+				UX designer harus memastikan kegunaan, aksesibilitas, dan interaksi suatu aplikasi/situs menjadi user friendly.
+				<br><br>Tugas-tugas UX Designer antara lain:<br>
+				1. Melakukan riset pengguna dan target pasar<br>
+				2. Membuat desain aplikasi sesuai hasil riset<br>
+				3. Melakukan pengujian atau testing produk dari aplikasi yang sudah dibuat
+			</div>
+		</div>
+		<div id="job04" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/software-dev.png')}}>
+			<div>
+				<div class="job-title">Software Developer</div>
+				Bertanggung jawab membangun serta menicptakan suatu produk. Sering bekerja sama dengan software engineer.
+				<br><br>Tugas-tugas software developer antara lain:<br>
+				1. mengembangkan dan mengarahkan pengujian sistem software dan prosedur validasi, pemrograman, dan dokumentasi<br>
+				2. menganalisis kebutuhan pengguna dan kebutuhan software untuk menentukan kelayakan desain<br>
+				3. bertemu klien dan project manager untuk merancang dan menciptakan sistem baru
+			</div>
+		</div>
+		<div id="job05" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/database-dev.png')}}>
+			<div>
+				<div class="job-title">Database Developer</div>
+				Bertanggung jawab terhadap problem yang terdapat di dalam aplikasi yang berhubungan dengan database. 
+				Database developer berfokus untuk mengelola sistem database. 
+				<br><br>Tugas-tugas database developer antara lain:<br>
+				1. Mengidentifikasi kebutuhan user dan mengelola database<br>
+				2. Mencadangkan dan mengembalikan data untuk mencegah kehilangan data<br>
+				3. Membuat dan melakukan tes terhadap modifikasi struktur database ketika diperlukan
+			</div>
+		</div>
+		<div id="job06" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/testing-qa.png')}}>
+			<div>
+				<div class="job-title">Software Quality Assurance (QA) / Tester</div>
+				Bertanggung jawab terhadap perencanaan jaminan kualitas aplikasi agar terhindar dari kegagalan pada saat dijalankan. 
+				Juga agar software tersebut dipastikan sudah berjalan dengan baik sebelum sampai ke tangan customer. 
+				<br><br>Tugas-tugas Software QA Tester antara lain:<br>
+				1. Membuat program pengujian otomatis<br>
+				2. Melakukan analisis dan membuat laporan pengujian<br>
+				3. Memberikan feedback atas aplikasi yang diuji
+			</div>
+		</div>
+		<div id="job07" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/web-dev.png')}}>
+			<div>
+				<div class="job-title">Web Developer</div>
+				Bertanggung jawab membuat dan mengembangkan situs. 
+				Selain itu web developer juga memastikan performa website optimal. 
+				Terdapat jenis-jenis web developer: back-end developer, front-end developer, dan full-stack developer. 
+				<br><br>Tugas-tugas web developer antara lain:<br>
+				1. Merancang logika website dan membangun databasenya<br>
+				2. Mendesain tampilan website<br>
+				3. Mencari dan memperbaiki celah keamanan pada website
+			</div>
+		</div>
+		<div id="job08" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/crm-tech.png')}}>
+			<div>
+				<div class="job-title">CRM Technical Developer</div>
+				Bertanggung jawab terhadap pengembangan perangkat lunak yang mengimplementasikan perangkat tambahan untuk sistem CRM. 
+				Tidak jarang pula CRM Developer bertugas untuk merancang dan membuat modul tambahan, plugin khusus, 
+				atau rangkaian aplikasi perangkat lunak yang dapat diintegrasikan dengan sistem CRM.
+				<br><br>Tugas-tugas CRM Developer antara lain:<br>
+				1. Memperbaiki keluhan client terhadap sistem CRM yang dibuat<br>
+				2. Mengumpulkan dan menginput data ke aplikasi seperti CMS (Content Management System), email responders, media sosial, google analytics, dll.<br>
+				3. Mengidentifikasi dan menyelesaikan masalah yang ada pada sistem CRM			
+			</div>
+		</div>
+		<div id="job09" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/tech-support.png')}}>
+			<div>
+				<div class="job-title">Technical Support</div>
+				Bertanggung jawab untuk membantu menyelesaikan masalah yang dihadapi user. 
+				Masalah user bisa berupa keluhan maupun pertanyaan.
+				<br><br>Tugas-tugas seorang technical support antara lain:<br>
+				1. Berkomunikasi dengan user melalui layanan yang tersedia (hotline atau live chat)<br>
+				2. Merekomendasikan solusi untuk memecahkan masalah<br>
+				3. Membangun hubungan kerja dengan end-users			
+			</div>
+		</div>
+		<div id="job10" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/system-sec-admin.png')}}>
+			<div>
+				<div class="job-title">Systems Security Administrator</div>
+				Bertanggung jawab terhadap keamanan jaringan komputer, termasuk keamanan dari sebuah administrasi sebuah perangkat seperti firewalls.
+				<br><br>Tugas-tugas system security administrator antara lain:<br>
+				1. Merancang dan mengidentifikasi kebutuhan perusahaan seputar sistem komputer<br>
+				2. Mengidentifikasi ancaman dan tanggap terhadap isu yang berhubungan dengan sistem<br>
+				3. Melakukan instalasi serta audit software dan hardware			
+			</div>
+		</div>
+		<div id="job11" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/app-dev.png')}}>
+			<div>
+				<div class="job-title">Applications Developer</div>
+				Bertanggung jawab terhadap pembuatan dan pengujian aplikasi yang didesain khusus untuk suatu perangkat. 
+				Applications developer biasanya memiliki spesialisasinya sendiri. 
+				Misal ada developer yang fokus pada app dengan sistem operasi iOS.				
+				<br><br>Tugas-tugas app developer antara lain:<br>
+				1. Mengembangkan aplikasi untuk memenuhi kebutuhan pelanggan<br>
+				2. Membuat dan menggunakan source code dalam sebuah aplikasi<br>
+				3. Mengevaluasi aplikasi yang sudah ada dan membuat modifikasi			
+			</div>
+		</div>
+		<div id="job12" class="team about-glass job">
+			<img src={{url_for('static', filename='/images/job/mobile-app-dev.png')}}>
+			<div>
+				<div class="job-title">Mobile App Developer</div>
+				Bertanggung jawab terhadap pembuatan dan pengujian aplikasi yang didesain khusus untuk perangkat mobile. 
+				Mobile app developer umumnya terdapat spesialisasi sistem operasi iOS dan Android.				
+				<br><br>Tugas-tugas mobile app developer antara lain:<br>
+				1. Mengembangkan aplikasi sesuai sistem operasi atau spesialisasinya masing-masing<br>
+				2. Melakukan inovasi untuk meningkatkan fungsionalitas dan menghadirkan fitur terbaru<br>
+				3. Maintenance aplikasi secara berkala agar fungsionalitas aplikasi tetap terjaga			
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		©2022&emsp;|&emsp;ITJobKu by abc5 (Fibonacci 3)
+	</div>
+	<script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='js/client.js') }} ></script>
+	<script src={{ url_for('static', filename='js/script.js') }} ></script>
+	<script src={{ url_for('static', filename='js/particles.js') }} ></script>
+	<script src={{ url_for('static', filename='js/app.js') }} ></script>
+	<script src={{ url_for('static', filename='js/stats.js') }} ></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+-- certifications --
+r programming           803 -----> 7
+information security    785 -----> 4
+machine learning        783 -----> 8
+shell programming       783 -----> 5
+full stack              768 -----> 2
+hadoop                  764 -----> 3
+python                  756 -----> 6
+distro making           740 -----> 1
+app development         719 -----> 0
+
+-- workshops --
+database security    897 -----> 2
+system designing     891 -----> 5
+web technologies     891 -----> 7
+hacking              867 -----> 4
+testing              852 -----> 6
+data science         842 -----> 1
+game development     831 -----> 3
+cloud computing      830 -----> 0
+
+-- memory capability score --
+medium       2317 -----> 1
+excellent    2303 -----> 0
+poor         2281 -----> 2
+
+-- Interested subjects --
+Software Engineering     731 -----> 3
+IOT                      722 -----> 1
+cloud computing          721 -----> 4
+programming              716 -----> 9
+networks                 713 -----> 7
+Computer Architecture    703 -----> 0
+data engineering         672 -----> 5
+hacking                  663 -----> 6
+Management               644 -----> 2
+parallel computing       616 -----> 8
+
+-- interested career area --
+system developer            1178 -----> 4
+security                    1177 -----> 3
+Business process analyst    1154 -----> 0
+developer                   1145 -----> 2
+testing                     1128 -----> 5
+cloud computing             1119 -----> 1
+
+-- Type of company want to settle in? --
+Service Based                        725 -----> 6
+Web Services                         719 -----> 8
+BPA                                  711 -----> 0
+Testing and Maintainance Services    698 -----> 7
+Product based                        695 -----> 3
+Finance                              694 -----> 2
+Cloud Services                       692 -----> 1
+product development                  669 -----> 9
+Sales and Marketing                  658 -----> 5
+SAaS services                        640 -----> 4
+
+-- worked in teams ever? --
+no     3470 -----> 0
+yes    3431 -----> 1
